@@ -16,6 +16,9 @@ type Config struct {
 	DB                driver.DBConfig `toml:"db" yaml:"db"`
 	CustomSSHSequence *CustomSequence `toml:"custom-ssh" yaml:"custom-ssh"`
 	CustomAPISequence *CustomSequence `toml:"custom-api" yaml:"custom-api"`
+
+	MinimApplicationID string `yaml:"minim_app_id"`
+	MinimSecret        string `yaml:"minim_secret"`
 }
 
 // CustomSequence is sequence of custom commands.

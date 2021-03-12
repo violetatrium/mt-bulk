@@ -53,6 +53,9 @@ func main() {
 		log.Fatalf("Configuration parser error: %s\n", err)
 	}
 
+	ctx = context.WithValue(ctx, "minim_app_id", mtbulk.Config.MinimApplicationID)
+	ctx = context.WithValue(ctx, "minim_secret", mtbulk.Config.MinimSecret)
+
 	wg := new(sync.WaitGroup)
 
 	// gracefull exit

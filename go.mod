@@ -2,6 +2,7 @@ module github.com/migotom/mt-bulk
 
 require (
 	github.com/BurntSushi/toml v0.3.1
+	github.com/MinimSecure/minim-api-examples/go v0.0.0-20210312142556-4e75c2b09e57
 	github.com/dgraph-io/badger v1.6.2
 	github.com/dgraph-io/ristretto v0.0.3 // indirect
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
